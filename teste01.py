@@ -15,6 +15,7 @@ O_Que_E_Radar_De_Proventos = f'O "Radar de Proventos" estima pagamentos futuros 
 print(f'{O_Que_E_Radar_De_Proventos}')
 print(os.linesep)
 print(f' 🤗 Encontramos a Opção de  Proventos....',os.linesep)
+#  oi
 
 
 

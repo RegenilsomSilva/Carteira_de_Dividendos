@@ -1,0 +1,134 @@
+git: 'innit' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos
+$ git init
+Initialized empty Git repository in C:/Users/RegenilsonSilveira/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos/.git/
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        .gitignore.txt
+        Desenvolvimento_01.py
+        Dividendo_a_Pagar.xlsx
+        Funcao_Cores.py
+        __pycache__/
+        dev02.py
+        log.txt
+        teste01.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        Desenvolvimento_01.py
+        Dividendo_a_Pagar.xlsx
+        Funcao_Cores.py
+        __pycache__/
+        dev02.py
+        log.txt
+        teste01.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ git add .
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Desenvolvimento_01.py
+        new file:   Dividendo_a_Pagar.xlsx
+        new file:   Funcao_Cores.py
+        new file:   __pycache__/Funcao_Cores.cpython-311.pyc
+        new file:   dev02.py
+        new file:   log.txt
+        new file:   teste01.py
+
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ git commit -m 'Versão 24/98/2024 @1.0.34'
+[master (root-commit) 6ec13e0] Versão 24/98/2024 @1.0.34
+ 8 files changed, 1373 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Desenvolvimento_01.py
+ create mode 100644 Dividendo_a_Pagar.xlsx
+ create mode 100644 Funcao_Cores.py
+ create mode 100644 __pycache__/Funcao_Cores.cpython-311.pyc
+ create mode 100644 dev02.py
+ create mode 100644 log.txt
+ create mode 100644 teste01.py
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ git remote add origin https://github.com/RegenilsomSilva/Carteira_de_Dividendos
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ ^C
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ git push --set-upstream origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/RegenilsomSilva/Carteira_de_Dividendos'
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+$ git push --set-upstream origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 21.85 KiB | 4.37 MiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/RegenilsomSilva/Carteira_de_Dividendos/pull/new/master
+remote:
+To https://github.com/RegenilsomSilva/Carteira_de_Dividendos
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)

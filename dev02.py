@@ -28,6 +28,7 @@ driver.switch_to.window(driver.window_handles[2])
 # Navegue para outra URL na terceira aba
 driver.get("https://www.yahoo.com")
 
+
 # Fechar as abas depois de um tempo
 '''
 Para abrir várias abas no mesmo navegador usando o Selenium com Python, 

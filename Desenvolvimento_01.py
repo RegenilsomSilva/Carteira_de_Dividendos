@@ -16,8 +16,6 @@ from time import sleep
 import random
 from datetime import datetime
 import logging
-from winotify import Notification, audio
-import sys
 from Funcao_Cores import Palheta_De_Cor
 from dotenv import load_dotenv,find_dotenv
 import pyautogui
@@ -29,7 +27,7 @@ import openpyxl
 '''
 https://www.investidor.b3.com.br/login
 Quero Desenvolver uma Automação ->
-	Web cresp, onde o Boot ira raspar as informações do Site da B3 ( Àrea do investidor da b3) as próximas data e quais serão
+	Web scraping, onde o Boot ira raspar as informações do Site da B3 ( Àrea do investidor da b3) as próximas data e quais serão
 	os ativos para pagamentos de Dividendos, ira trazer tanto a foto dos ativos, quanto detalhado no Excel.
 	iria execultar 2 ou 3 vezes por semana, disponibilizando em um E-mai
 	
@@ -49,7 +47,7 @@ https://www.investidor.b3.com.br/proventos/radar
 load_dotenv(find_dotenv())
 
 
-logging.basicConfig(level=logging.INFO, filename=r'Arquivos_LOG_Temp' + os.sep + 'Log_de_Execucao.log', format='%(asctime)s - %(levelname)s -%(message)s', datefmt='%d/%m/%Y %H:%M')
+logging.basicConfig(level=logging.INFO, filename=r'Arquivos_LOG_Temp' + os.sep + 'Log_de_Execucao.log',filemode='w', format='%(asctime)s - %(levelname)s -%(message)s', datefmt='%d/%m/%Y %H:%M')
 class Dividendos:
 
     def __init__(self):
@@ -376,16 +374,37 @@ class Dividendos:
             
             self.CriacaoPlanilha.append([prod,tipEvent,dayCompra,dayPagDivi,unitPreco,fechamentPreco,Data_Atual])
         logging.info('Planilha foi salva com sucesso...')
-        self.workbook.save('dividendo_a_pagar.xlsx') 
+        # self.workbook.save(f'dividendo_a_pagar.xlsx') 
+        self.workbook.save(r'Arquivos_LOG_Temp' + os.sep + 'dividendo_a_pagar.xlsx') 
         
         print(f'🤖🤖Obrigado por usar o Nosso Boot 🤖🤖🤖 as {datetime.now().strftime('%d/%m/%Y')}{os.linesep}')   
      
-              
+    def Modulo_De_Envio(self):
+        try:
+           
+            from Envios_emails.disparo_Email import EmailSender
+            transmitir = EmailSender()
+            transmitir.send_email()
+            Hora_Atual  = datetime.now().strftime('%H:%M') 
+
+            print(f'Buscando Módulo De envio de E-mails {Hora_Atual} ')
+            print('Elemento encontrado com Sucesso !!!')
+            logging.info('Elemento encontrado com Sucesso !!!')
+            print(os.linesep)
+            logging.info(f'{os.linesep}')
+
+        except:
+            NameError(f'Não Foi possivel Fazer o Envio de E-mail')
+            logging.critical(f'Não Foi possivel Fazer o Envio de E-mail')
+            NameError('Porém daremos continuidade...!')
+            logging.critical('Porém daremos continuidade...!')
+                                
               
     
 
 start = Dividendos()
 start.Inicio()
+start.Modulo_De_Envio()
 
 sleep(180)
 

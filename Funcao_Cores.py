@@ -17,6 +17,7 @@ class Palheta_De_Cor:
         self.resetar =    '\033[0m'
 
         # "\033[1;3m" Negrito e itálico. "\033[0m" Texto normal.  
+        
 
 # start = Palheta_De_Cor()
 
