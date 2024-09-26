@@ -1,22 +1,26 @@
-import pyautogui
-import os
 
-# Nao_sou_Robo = []
-
-
-# if Nao_sou_Robo is not None:
-        
-#         print('Opção de Não sou Robô está Visivél.... Vamos Clicar')
-#         pyautogui.click(x=239,y=684,duration=2.5)  # Mova o mouse para as coordenadas XY e clique nele.
-#         print(f'Foi selecionado com sucesso ✅')
-
-O_Que_E_Radar_De_Proventos = f'O "Radar de Proventos" estima pagamentos futuros de investimentos, incluindo dividendos e juros sobre capital próprio, \noferecendo uma visão clara de cada evento.\n Esta ferramenta facilita a tomada de decisão de investimento e o planejamento financeiro.'
-
-print(f'{O_Que_E_Radar_De_Proventos}')
-print(os.linesep)
-print(f' 🤗 Encontramos a Opção de  Proventos....',os.linesep)
-#  oi
+import pygame
+import time
+import os 
+# pygame.mixer.music.load('CoffinDance1Hour.mp3')
 
 
+# Inicializa o mixer do pygame
+pygame.mixer.init()
 
+#Local da Musica....... 
+local_da_Musica = r'MUSICA_2_PLANO' + os.sep + 'EiffelBlue_8_Minutos.mp3'
+# Carrega e toca a música
+pygame.mixer.music.load(local_da_Musica)
+
+# Toca a música em loop
+pygame.mixer.music.play(-1)
+
+# Automação rodando
+for i in range(50):
+    print(f"Automação rodando... {i}")
+    time.sleep(2)  # Simulando uma tarefa
+
+# Quando terminar a automação, você pode parar a música
+pygame.mixer.music.stop()
 

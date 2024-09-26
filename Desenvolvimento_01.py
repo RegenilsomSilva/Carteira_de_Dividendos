@@ -20,6 +20,7 @@ from Funcao_Cores import Palheta_De_Cor
 from dotenv import load_dotenv,find_dotenv
 import pyautogui
 import openpyxl
+import pygame
 
 
 
@@ -48,6 +49,8 @@ load_dotenv(find_dotenv())
 
 
 logging.basicConfig(level=logging.INFO, filename=r'Arquivos_LOG_Temp' + os.sep + 'Log_de_Execucao.log',filemode='w', format='%(asctime)s - %(levelname)s -%(message)s', datefmt='%d/%m/%Y %H:%M')
+
+
 class Dividendos:
 
     def __init__(self):
@@ -82,6 +85,14 @@ class Dividendos:
                                 ElementNotVisibleException,
                                 ElementNotSelectableException]
         )
+# Inicializa o mixer do pygame
+#Local da Musica....... 
+    local_da_Musica = r'MUSICA_2_PLANO' + os.sep + 'EiffelBlue_8_Minutos.mp3'
+# Carrega e toca a música
+    pygame.mixer.music.load(local_da_Musica)
+
+    # Toca a música em loop
+    pygame.mixer.music.play(-1)
 
     
     def Inicio(self):
@@ -377,7 +388,7 @@ class Dividendos:
         # self.workbook.save(f'dividendo_a_pagar.xlsx') 
         self.workbook.save(r'Arquivos_LOG_Temp' + os.sep + 'dividendo_a_pagar.xlsx') 
         
-        print(f'🤖🤖Obrigado por usar o Nosso Boot 🤖🤖🤖 as {datetime.now().strftime('%d/%m/%Y')}{os.linesep}')   
+        print(f'🤖🤖Obrigado por usar o Nosso Boot 🤖🤖🤖')   
      
     def Modulo_De_Envio(self):
         try:
@@ -405,6 +416,7 @@ class Dividendos:
 start = Dividendos()
 start.Inicio()
 start.Modulo_De_Envio()
+pygame.mixer.music.stop()
 
 sleep(180)
 
