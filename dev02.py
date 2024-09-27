@@ -1,32 +1,64 @@
 from selenium import webdriver
+from selenium.common.exceptions import *
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.edge.service import Service 
+from selenium.webdriver.edge.options import Options
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from selenium.webdriver.support  import expected_conditions
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 import time
+from time import sleep
+import random
 
+eder_Options = Options()
+eder_Options.use_chromium = True  # Para garantir que o Edge Chromium seja usado
+eder_Options.add_argument('--lang=pt-BR')
+eder_Options.add_argument('disable-notifications')
+eder_Options.add_argument('ignore-certificate-errors')
+eder_Options.add_argument('--ignore-ssl-errors')
+eder_Options.add_argument('--ignore-certificate-errors')
+eder_Options.add_argument('--ignore-Renderer')
+
+webdriver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()),options=eder_Options)
+wait = WebDriverWait(
+            driver=webdriver,
+            timeout=10,
+            poll_frequency=1,
+            ignored_exceptions=[NoSuchElementException,
+                                ElementNotVisibleException,
+                                ElementNotSelectableException]
+        )
+
+      
 # Inicialize o WebDriver (por exemplo, usando o Chrome)
-driver = webdriver.Chrome()
 
 # Abra a primeira página
-driver.get("https://www.uol.com.br/")
-
+webdriver.get("https://www.uol.com.br/")
+sleep(random.randint(10, 60))
 # Abra uma nova aba (segunda aba)
-driver.execute_script("window.open('');")
-time.sleep(15)
+webdriver.execute_script("window.open('');")
+
 
 # Troque para a nova aba aberta
-driver.switch_to.window(driver.window_handles[1])
-
+webdriver.switch_to.window(webdriver.window_handles[1])
+sleep(random.randint(10, 60))
 # Navegue para uma nova URL na nova aba
-driver.get("https://www.r7.com/")
+webdriver.get("https://www.r7.com/")
 
 # Abra uma terceira aba
-driver.execute_script("window.open('');")
-time.sleep(15)
+webdriver.execute_script("window.open('');")
+sleep(random.randint(10, 60))
 
 # Troque para a terceira aba
-driver.switch_to.window(driver.window_handles[2])
+webdriver.switch_to.window(webdriver.window_handles[2])
 
 # Navegue para outra URL na terceira aba
-driver.get("https://www.yahoo.com")
+webdriver.get("https://www.yahoo.com")
+# Navegue para outra URL da 1° aba
+sleep(random.randint(10, 60))
+webdriver.switch_to.window(webdriver.window_handles[0])
+sleep(random.randint(10, 60))
 
 
 # Fechar as abas depois de um tempo
@@ -41,4 +73,4 @@ driver.get(url): Abre uma página na aba ativa.
 '''
 
 time.sleep(180)
-driver.quit()
+webdriver.quit()
