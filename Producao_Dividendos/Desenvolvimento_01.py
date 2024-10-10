@@ -13,6 +13,7 @@ from selenium.webdriver.support  import expected_conditions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
+import time
 import random
 from datetime import datetime
 import logging
@@ -74,74 +75,67 @@ class Dividendos:
         
         print(os.linesep)
         self.webdriver.maximize_window()
-    
-        try:
-            print('Abra a primeira página')
-            self.webdriver.get("https://www.uol.com.br/")
-            sleep(random.randint(6, 8))
-        except Exception as e:
-            print(f'Erro... ao abrir a Primeira Página: {e}')
+        
+        # Abre a primeira página
+        primeira_pagina = 'https://www.bol.uol.com.br/' 
 
-        try:
-            print('Abra uma (segunda aba)')
-            self.webdriver.execute_script("window.open('');")
+        Segunda_página_Com_Aba = 'https://www.smiles.com.br/mfe/promocao' 
+
+        Terceira_página_Com_Aba = 'https://www.investidor.b3.com.br/login'
+        print(os.linesep)
+
+        if primeira_pagina is not None:
+            self.webdriver.get(primeira_pagina)
+            print('Primeira página foi aberta Juntamente com uma Aba')
+            # Depois que abriu a primeira página - Vamos abri uma outra Aba
+            habilitar_os_cookies = self.wait.until(
+                    expected_conditions.presence_of_element_located(
+                        # (By.XPATH,'//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
+                        (By.XPATH,'//button[@class="banner-lgpd-consent__accept"]')
+                    )
+                )   
+            print(os.linesep)
+            print(' 🤗 Encontramos a Opção de Habilitar os Cookies....')
+            self.webdriver.execute_script("arguments[0].click()",habilitar_os_cookies)
+            print('iremos Clicar.... em habilitar...\n Concluido com Sucesso....✅')    
+            print(os.linesep)
+            sleep(random.randint(120, 180))
+            print(os.linesep)
+
+        # Abra uma nova aba (segunda aba)
+        if Segunda_página_Com_Aba is not None:
+            self.webdriver.execute_script(f"window.open('{Segunda_página_Com_Aba}');")
             self.webdriver.switch_to.window(self.webdriver.window_handles[1])
-            sleep(random.randint(6, 8))
-            self.webdriver.get("https://www.r7.com/")
-        except Exception as e:
-            print(f'Erro ao abrir a Segunda Aba: {e}') 
+            print('Segunda Aba foi aberta')
+            habilitar_cookiesAba02 = self.wait.until(
+                    expected_conditions.presence_of_element_located(
+                        # (By.XPATH,'//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
+                        (By.XPATH,'//button[@id="onetrust-accept-btn-handler"]')
+                    )
+                )
+            print(' 🤗 Encontramos a Opção de Habilitar os Cookies....')
+            self.webdriver.execute_script("arguments[0].click()",habilitar_cookiesAba02)
+            print('iremos Clicar.... em habilitar...\n Concluido com Sucesso....✅')  
+            sleep(random.randint(120, 180))
+            print(os.linesep)
 
-        try:
-            print("Total de abas abertas:", len(self.webdriver.window_handles))
-            if len(self.webdriver.window_handles) > 3:
-                self.webdriver.switch_to.window(self.webdriver.window_handles[2])  # Acessa a última aba
-                self.webdriver.get('https://www.investidor.b3.com.br/login') 
-            else:
-                print("A terceira aba não está disponível.")
-        except Exception as e:
-            print(f'Erro ao acessar a página... de investimento: {e}')
+        # Abra uma terceira aba
+        if Terceira_página_Com_Aba is not None:
+            print(os.linesep)
+            print(' Vamos abri a terceira Aba')
+            self.webdriver.execute_script(f"window.open('{Terceira_página_Com_Aba}');")
+            self.webdriver.switch_to.window(self.webdriver.window_handles[2])
+            print('Terceira  Aba foi aberta com sucesso ...')
 
-
-    # def Entra_Portal(self):
-    #     print(os.linesep)
-    #     self.webdriver.maximize_window()
-        
-    #     # Abra a primeira página
-    #     try:
-    #         print('Abra a primeira página')
-    #         self.webdriver.get("https://www.uol.com.br/")
-    #         sleep(random.randint(10, 30))
-    #     except:
-    #         print('Erro... ao abrir a Primeira Página')
-
-    #     try:
-    #         print('Abra uma (segunda aba)')
-    #         # Abra uma nova aba
-    #         self.webdriver.execute_script("window.open('');")
-    #         # Troque para a nova aba aberta
-    #         self.webdriver.switch_to.window(self.webdriver.window_handles[1])
-    #         sleep(random.randint(10, 30))
-    #         # Navegue para uma nova URL na nova aba
-    #         self.webdriver.get("https://www.r7.com/")
-    #         print('print de self.webdriver.window_handles para ver quantas abas estão abertas.')
-    #         print(f'Temos abas em Abertos:{list(self.webdriver.window_handles)}')
-    #     # except:
-    #     #     print('Erro ao abrir a Segunda Aba....') 
-    #     except Exception as e:
-
-    #         print(f'Erro ao abrir a Segunda Aba.... {e}')
-        
-       
-    #     # Troque para a terceira aba
-    #     self.webdriver.switch_to.window(self.webdriver.window_handles[2])
-    #     self.webdriver.get('https://www.youtube.com/watch?v=WUr-9ySNI0A&ab_channel=TecMundo') 
-    #     print(os.linesep)
-       
-      
-
-
-
-
+        # try:
+        #     print("Total de abas abertas:", len(self.webdriver.window_handles))
+        #     if len(self.webdriver.window_handles) > 3:
+        #         self.webdriver.switch_to.window(self.webdriver.window_handles[2])  # Acessa a última aba
+        #         self.webdriver.get('https://www.investidor.b3.com.br/login') 
+        #     else:
+        #         print("A terceira aba não está disponível.")
+        # except Exception as e:
+        #     print(f'Erro ao acessar a página... de investimento: {e}')
         try:
             
             habilitar_os_cookies = self.wait.until(

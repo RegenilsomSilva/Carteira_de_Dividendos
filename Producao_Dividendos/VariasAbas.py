@@ -31,7 +31,7 @@ wait = WebDriverWait(
                                 ElementNotVisibleException,
                                 ElementNotSelectableException]
         )
-
+webdriver.maximize_window()
 # Abre a primeira página
 primeira_pagina = 'https://www.bol.uol.com.br/' 
 
