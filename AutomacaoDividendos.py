@@ -86,8 +86,12 @@ class Dividendos:
                                 ElementNotSelectableException]
         )
 # Inicializa o mixer do pygame
+    pygame.init()
+# Inicializa o Mix de áudio 
+    pygame.mixer.init()  
 #Local da Musica....... 
-    local_da_Musica = r'MUSICA_2_PLANO' + os.sep + 'EiffelBlue_8_Minutos.mp3'
+    local_da_Musica = r'MUSICA_2_PLANO'  + os.sep +'EiffelBlue_8_Minutos.mp3'
+    
 # Carrega e toca a música
     pygame.mixer.music.load(local_da_Musica)
 
@@ -102,105 +106,170 @@ class Dividendos:
         self.Radar_de_Proventos()
         
 
-
     def Entra_Portal(self):
-
+         
         print(os.linesep)
-        # 1°- Entra no Site (https://www.investidor.b3.com.br/login)
         self.webdriver.maximize_window()
-        # self.webdriver.get('https://www.apple.com/br/shop/buy-iphone/iphone-16-pro/tela-de-6,9-polegadas-512gb-tit%C3%A2nio-natural')   
-        self.webdriver.get('https://www.investidor.b3.com.br/login') 
+        
+        # Abre a primeira página
+        primeira_pagina = 'https://www.bol.uol.com.br/' 
+
+        Segunda_página_Com_Aba = 'https://www.smiles.com.br/mfe/promocao' 
+
+        Terceira_página_Com_Aba = 'https://www.investidor.b3.com.br/login'
         print(os.linesep)
-
-        # habilitar_os_cookies =  self.webdriver.find_elements(
-        #     'xpath', '//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
-        # # button id="onetrust-accept-btn-handler"
-        habilitar_os_cookies = self.wait.until(
-            expected_conditions.presence_of_element_located(
-                (By.XPATH,'//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
-            )
-        )   
-
-        if habilitar_os_cookies is not None:
+        
+        if primeira_pagina is not None:
+            self.webdriver.get(primeira_pagina)
+            print('Primeira página foi aberta Juntamente com uma Aba')
+            # Depois que abriu a primeira página - Vamos abri uma outra Aba
+            habilitar_os_cookies = self.wait.until(
+                    expected_conditions.presence_of_element_located(
+                        # (By.XPATH,'//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
+                        (By.XPATH,'//button[@class="banner-lgpd-consent__accept"]')
+                    )
+                )   
             print(os.linesep)
             print(' 🤗 Encontramos a Opção de Habilitar os Cookies....')
-            logging.info(f'🤗 Encontramos a Opção de Habilitar os Cookies....')
             self.webdriver.execute_script("arguments[0].click()",habilitar_os_cookies)
-            print('iremos Clicar.... em habilitar...\n Concluido com Sucesso....✅')
-            logging.info('iremos Clicar.... em habilitar...\n Concluido com Sucesso....✅')
-            sleep(random.randint(3, 6))
+            print('iremos Clicar.... em habilitar...\n Concluido com Sucesso....✅')    
             print(os.linesep)
+            sleep(random.randint(120, 180))
+            print(os.linesep)
+        
+         # Abra uma nova aba (segunda aba)
+        if Segunda_página_Com_Aba is not None:
+            self.webdriver.execute_script(f"window.open('{Segunda_página_Com_Aba}');")
+            self.webdriver.switch_to.window(self.webdriver.window_handles[1])
+            print('Segunda Aba foi aberta')
+            habilitar_cookiesAba02 = self.wait.until(
+                    expected_conditions.presence_of_element_located(
+                        # (By.XPATH,'//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
+                        (By.XPATH,'//button[@id="onetrust-accept-btn-handler"]')
+                    )
+                )
+            print(' 🤗 Encontramos a Opção de Habilitar os Cookies....')
+            self.webdriver.execute_script("arguments[0].click()",habilitar_cookiesAba02)
+            print('iremos Clicar.... em habilitar...\n Concluido com Sucesso....✅')  
+            sleep(random.randint(120, 180))
+            print(os.linesep)
+        
+         # Abra uma terceira aba
+        if Terceira_página_Com_Aba is not None:
+            print(os.linesep)
+            print(' Vamos abri a terceira Aba')
+            self.webdriver.execute_script(f"window.open('{Terceira_página_Com_Aba}');")
+            self.webdriver.switch_to.window(self.webdriver.window_handles[2])
+            print('Terceira  Aba foi aberta com sucesso ...')
 
-        # 2° Digite seu CPF (****************) da um Enter ou Entra
-        Digitar_Usuario =  self.wait.until(
-            expected_conditions.presence_of_element_located(
-                (By.XPATH,'//input[@aria-label="Digite seu CPF/CNPJ"]')
-            )
-        )
-        sleep(random.randint(5, 8))                                
-        if Digitar_Usuario is not None :
+        # try:
+        #     print("Total de abas abertas:", len(self.webdriver.window_handles))
+        #     if len(self.webdriver.window_handles) > 3:
+        #         self.webdriver.switch_to.window(self.webdriver.window_handles[2])  # Acessa a última aba
+        #         self.webdriver.get('https://www.investidor.b3.com.br/login') 
+        #     else:
+        #         print("A terceira aba não está disponível.")
+        # except Exception as e:
+        #     print(f'Erro ao acessar a página... de investimento: {e}')
+  
+
+
+
+# '-----------------------------------------------------------------------------------------------'
+        try:
             
-            print(os.linesep)
-            print(' 🤗 Encontramos a Opção Digitar o CPF ou CNPJ...')
-            logging.info(f'🤗 Encontramos a Opção Digitar o CPF ou CNPJ...')
-            self.webdriver.execute_script("arguments[0].click()",Digitar_Usuario)
-            sleep(random.randint(5, 8))
-            Digitar_Usuario.send_keys(self.usuario)
-            print(f'Foi digitado com sucesso ✅')
-            logging.info(f'Foi digitado com sucesso ✅')
-            Digitar_Usuario.send_keys(Keys.ENTER)
-            print(os.linesep)
+            habilitar_os_cookies = self.wait.until(
+                expected_conditions.presence_of_element_located(
+                    (By.XPATH,'//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
+                )
+            )   
 
-         # 3° Digitar a Senha (*************) da um Enter ou Entra
-        Digitar_password =  self.wait.until(
-            expected_conditions.element_to_be_clickable(
-                (By.XPATH,'//div[@class="form__control"]//input[@type="password"]')
+            if habilitar_os_cookies is not None:
+                print(os.linesep)
+                print(' 🤗 Encontramos a Opção de Habilitar os Cookies....')
+                logging.info(f'🤗 Encontramos a Opção de Habilitar os Cookies....')
+                self.webdriver.execute_script("arguments[0].click()",habilitar_os_cookies)
+                print('iremos Clicar.... em habilitar...\n Concluido com Sucesso....✅')
+                logging.info('iremos Clicar.... em habilitar...\n Concluido com Sucesso....✅')
+                sleep(random.randint(3, 6))
+                print(os.linesep)
+
+            # 2° Digite seu CPF (****************) da um Enter ou Entra
+            Digitar_Usuario =  self.wait.until(
+                expected_conditions.presence_of_element_located(
+                    (By.XPATH,'//input[@aria-label="Digite seu CPF/CNPJ"]')
+                )
             )
-        )
-       
-        sleep(random.randint(5, 8))   
-
-        if Digitar_password is not None:
-            print(os.linesep)
-            print(' 🤗 Encontramos a Opção de Digitar a Senha ou Password ....')
-            logging.info(f'🤗 Encontramos a Opção de Digitar a Senha ou Password ....')
-            self.webdriver.execute_script("arguments[0].click()",Digitar_password)
-            sleep(random.randint(3, 5))
-            Digitar_password.send_keys(self.Senha)
-            print(f'Foi digitado com sucesso ✅')
-            logging.info(f'Foi digitado com sucesso ✅')
-            sleep(random.randint(2, 3))
-            print(os.linesep)
-
-        # 4° Clicar no Campo( Não sou Robô)
-    #  iremos utilizar o Pyautoguir para Sleecionar a caixa de texto | Não sou robor
-        Nao_sou_Robo = []
-        if Nao_sou_Robo is not None:
+            sleep(random.randint(5, 8))                                
+            if Digitar_Usuario is not None :
                 
-                print('Opção de Não sou Robô está Visivél.... Vamos Clicar')
-                pyautogui.click(x=239,y=684,duration=2)  # Mova o mouse para as coordenadas XY e clique nele.
-                print(f'Foi selecionado com sucesso ✅')
+                print(os.linesep)
+                print(' 🤗 Encontramos a Opção Digitar o CPF ou CNPJ...')
+                logging.info(f'🤗 Encontramos a Opção Digitar o CPF ou CNPJ...')
+                self.webdriver.execute_script("arguments[0].click()",Digitar_Usuario)
+                sleep(random.randint(5, 8))
+                Digitar_Usuario.send_keys(self.usuario)
+                print(f'Foi digitado com sucesso ✅')
+                logging.info(f'Foi digitado com sucesso ✅')
+                Digitar_Usuario.send_keys(Keys.ENTER)
+                print(os.linesep)
 
+            # 3° Digitar a Senha (*************) da um Enter ou Entra
+            Digitar_password =  self.wait.until(
+                expected_conditions.element_to_be_clickable(
+                    (By.XPATH,'//div[@class="form__control"]//input[@type="password"]')
+                )
+            )
+        
+            sleep(random.randint(5, 8))   
+
+            if Digitar_password is not None:
+                print(os.linesep)
+                print(' 🤗 Encontramos a Opção de Digitar a Senha ou Password ....')
+                logging.info(f'🤗 Encontramos a Opção de Digitar a Senha ou Password ....')
+                self.webdriver.execute_script("arguments[0].click()",Digitar_password)
+                sleep(random.randint(3, 5))
+                Digitar_password.send_keys(self.Senha)
+                print(f'Foi digitado com sucesso ✅')
+                logging.info(f'Foi digitado com sucesso ✅')
+                sleep(random.randint(2, 3))
+                print(os.linesep)
+
+            # 4° Clicar no Campo( Não sou Robô)
+        #  iremos utilizar o Pyautoguir para Sleecionar a caixa de texto | Não sou robor
+            Nao_sou_Robo = []
+            if Nao_sou_Robo is not None:
+                    
+                    print('Opção de Não sou Robô está Visivél.... Vamos Clicar')
+                    pyautogui.click(x=239,y=684,duration=2)  # Mova o mouse para as coordenadas XY e clique nele.
+                    print(f'Foi selecionado com sucesso ✅')
+
+        
+            Entra_Na_Aplicacao = []
+            if Entra_Na_Aplicacao is not None:
+                print(os.linesep)
+                print(f' {self.func.cianoNegrito} 🤗 Encontramos a Opção de Entra na Aplicação ....')
+                pyautogui.click(x=383,y=874,duration=2)  # Mova o mouse para as coordenadas XY e clique nele.
+                print(f'{self.func.cianoNegrito} Foi selecionado com sucesso ✅')
+                sleep(random.randint(3, 6))
+                print(os.linesep)
+                print(os.linesep)
+
+            # 6° Pular TOUR -> 
+        except Exception as e:
+            
+            print(f'Erro ao Hábilitar os |@Cookies| |@Digitar_Usuario| |@Digitar_password| |@Nao_sou_Robo| |@Entra_Na_Aplicacao|: {e}')
+            print('Tente Novamente Ajustar algus deste Módulo......')
+            print(os.linesep)
       
-        Entra_Na_Aplicacao = []
-        if Entra_Na_Aplicacao is not None:
-              print(os.linesep)
-              print(f' {self.func.cianoNegrito} 🤗 Encontramos a Opção de Entra na Aplicação ....')
-              pyautogui.click(x=383,y=874,duration=2)  # Mova o mouse para as coordenadas XY e clique nele.
-              print(f'{self.func.cianoNegrito} Foi selecionado com sucesso ✅')
-              sleep(random.randint(3, 6))
-              print(os.linesep)
-              print(os.linesep)
 
-        # 6° Pular TOUR -> 
              
     def Criacao_De_Planilha(self):
         try:
             # Vamos criar uma planilha para ser enviada via E-mail pela automação 
             # Com Isso o nosso Boot será capaz de enviar as informações via Log terminal e também via E-mail
-            self.workbook                 =       openpyxl.load_workbook('dividendo_a_pagar.xlsx') # Este é a versão mais nova do OpenPyxel
+            self.workbook                 =       openpyxl.load_workbook( r'Arquivos_LOG_Temp' + os.sep + 'dividendo_a_pagar.xlsx') # Este é a versão mais nova do OpenPyxel
             #  Criando uma variavél workbook 
-            # self.CriacaoPlanilha          =       self.workbook['Dividendo'] # Planilha1
             self.CriacaoPlanilha          =       self.workbook['Planilha2'] # Planilha1
             self.CriacaoPlanilha['B1'] = 'TIPOS DE EVENTOS'
             self.CriacaoPlanilha['C1'] = 'DATA-COM'
@@ -210,16 +279,13 @@ class Dividendos:
             self.CriacaoPlanilha['G1'] = 'DATA DA AUTOMAÇÃO'
             # 👆🏼 Acessando a Página Dentro da Planilha Workbook
 
-            print(f'🤖🤖Obrigado por usar o Nosso Boot Criação de Planilhas Excel 🤖🤖🤖 as {datetime.now()}{os.linesep}')
-            logging.info(f'🤖🤖Obrigado por usar o Nosso Boot Criação de Planilhas Excel 🤖🤖🤖 as {datetime.now()}{os.linesep}')
-            print('Criação da Planilha Efetuado com sucesso..')
-            logging.info('Criação da Planilha Efetuado com sucesso..')
+            print(f'🤖🤖Obrigado por usar o Nosso Boot Criação de Planilhas Excel 🤖🤖🤖 as {datetime.now()}{os.linesep},Criação da Planilha Efetuado com sucesso..{os.linesep}')
+            logging.info(f'🤖🤖Obrigado por usar o Nosso Boot Criação de Planilhas Excel 🤖🤖🤖 as {datetime.now()}{os.linesep} Criação da Planilha Efetuado com sucesso..')
             print(os.linesep)
+
         except:
-            print('Erro ao Montar a Criação de Planilha')
+            print('Erro ao Montar a Criação de Planilha, tente novamente, depois de corrigir o Erro...')
             logging.warning('Erro ao Montar a Criação de Planilha')
-            print('Tente Novamente, depois de corrigir o Erro...')
-            logging.warning('Tente Novamente, depois de corrigir o Erro...')
             print(os.linesep) 
                     
 # /proventos/radar

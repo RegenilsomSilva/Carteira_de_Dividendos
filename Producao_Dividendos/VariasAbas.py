@@ -85,6 +85,7 @@ if Terceira_página_Com_Aba is not None:
     webdriver.execute_script(f"window.open('{Terceira_página_Com_Aba}');")
     webdriver.switch_to.window(webdriver.window_handles[2])
     print('Terceira  Aba foi aberta com sucesso ...')
+    print('Finalizamos com sucesso....')
 
 
    

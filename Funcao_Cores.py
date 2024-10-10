@@ -20,4 +20,5 @@ class Palheta_De_Cor:
         
 
 # start = Palheta_De_Cor()
+# print('Estamos na Reta Final....')
 

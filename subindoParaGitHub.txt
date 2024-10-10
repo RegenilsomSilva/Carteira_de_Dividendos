@@ -132,3 +132,802 @@ To https://github.com/RegenilsomSilva/Carteira_de_Dividendos
 branch 'master' set up to track 'origin/master'.
 
 AzureAD+RegenilsonSilveira@MTZ-TI-DESK-RE MINGW64 ~/OneDrive - SERVGAS/Área de Trabalho/AUTOMACAO/Automação Carteira de Dividendos (master)
+
+
+
+=================================================================================
+================== AUTOMATIZANDO CARTEIRA DE DIVIDENDOS  =======================
+============================== BOOT-@REGIS |2024 ===============================
+=================================================================================
+=================================================================================
+
+
+
+
+
+DevTools listening on ws://127.0.0.1:58565/devtools/browser/4e824fa0-9a22-48f6-b9fb-c2773e8381a7
+
+
+
+
+[13952:25048:1010/154111.149:ERROR:cert_verify_proc_builtin.cc(1069)] CertVerifyProcBuiltin for abtest.conteudo.uol failed:
+----- Certificate i=0 (CN=Kubernetes Ingress Controller Fake Certificate,O=Acme Co) -----
+ERROR: No matching issuer found
+
+
+Primeira página foi aberta Juntamente com uma Aba
+
+
+ 🤗 Encontramos a Opção de Habilitar os Cookies....
+iremos Clicar.... em habilitar...
+ Concluido com Sucesso....✅
+
+
+[13952:27444:1010/154115.261:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[13952:27444:1010/154116.498:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[13952:27444:1010/154116.531:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[13952:27444:1010/154116.571:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[13952:27444:1010/154117.117:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[13952:27444:1010/154117.133:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+
+
+Segunda Aba foi aberta
+[13952:27444:1010/154333.065:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[13952:27444:1010/154333.372:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+ 🤗 Encontramos a Opção de Habilitar os Cookies....
+iremos Clicar.... em habilitar...
+ Concluido com Sucesso....✅
+[13952:18812:1010/154514.235:ERROR:cert_verify_proc_builtin.cc(1069)] CertVerifyProcBuiltin for abtest.conteudo.uol failed:
+----- Certificate i=0 (CN=Kubernetes Ingress Controller Fake Certificate,O=Acme Co) -----
+ERROR: No matching issuer found
+
+
+[13952:27444:1010/154517.209:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[13952:27444:1010/154517.615:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+
+
+
+
+ Vamos abri a terceira Aba
+Terceira  Aba foi aberta com sucesso ...
+[13952:27444:1010/154617.296:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+
+ 🤗 Encontramos a Opção de Habilitar os Cookies....
+iremos Clicar.... em habilitar...
+ Concluido com Sucesso....✅
+
+
+
+
+ 🤗 Encontramos a Opção Digitar o CPF ou CNPJ...
+Foi digitado com sucesso ✅
+[13952:27444:1010/154640.102:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[13952:27444:1010/154640.258:ERROR:interface_endpoint_client.cc(725)] Message 2 rejected by interface blink.mojom.WidgetHost
+
+
+
+
+ 🤗 Encontramos a Opção de Digitar a Senha ou Password ....
+Foi digitado com sucesso ✅
+
+
+Opção de Não sou Robô está Visivél.... Vamos Clicar
+Foi selecionado com sucesso ✅
+
+
+  🤗 Encontramos a Opção de Entra na Aplicação ....
+ Foi selecionado com sucesso ✅
+
+
+
+
+🤖🤖Obrigado por usar o Nosso Boot Criação de Planilhas Excel 🤖🤖🤖 as 2024-10-10 15:47:02.795400
+,Criação da Planilha Efetuado com sucesso..
+
+
+
+
+
+ 🤗 Encontramos a Opção de  Pular TOUR....
+Clicado com sucesso....
+
+
+
+
+ 🤗 Encontramos a Opção de  Proventos....
+Clicado com sucesso....
+
+
+
+
+[13952:27444:1010/154732.841:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+
+
+  🤗 Encontramos a Opção de  Proventos....
+Clicado com sucesso....
+
+
+O "Radar de Proventos" estima pagamentos futuros de investimentos, incluindo dividendos e juros sobre capital próprio
+
+
+
+
+Show de Bola... Encontramos os Produtos
+
+
+Encontramos o Tipo de Eventos.....
+
+
+ Encontramos a Data para Compra as Ações e Adquiri os Dividendos ou o JCP....
+
+
+
+
+Encontramos a Data que a Empresa pagará os Dividendos ou o JCP...
+
+
+
+
+Encontramos o Valor dos Dividendos...
+
+
+...Preço sugerido para Compra as Açoes e ter o beneficío de ser pago o Dividendo....
+
+
+
+
+ABBV34 - ABBVIE INC.
+DIVIDENDO
+11/10/2024
+22/11/2024
+R$ 0,365004
+R$ 67,94
+
+
+ABTT34 - ABBOTT LABORATORIES
+DIVIDENDO
+11/10/2024
+22/11/2024
+R$ 0,167999
+R$ 53,94
+
+
+FCXO34 - FREEPORT-MCMORAN INC.
+DIVIDENDO
+11/10/2024
+07/11/2024
+R$ 0,185122
+R$ 90,82
+
+
+H1RL34 - HORMEL FOODS CORP
+DIVIDENDO
+11/10/2024
+22/11/2024
+R$ 1,045332
+R$ 172,94
+
+
+M1AA34 - MID-AMERICA APARTMENT COMMUNITIES INC
+DIVIDENDO
+11/10/2024
+06/11/2024
+R$ 1,360650
+R$ 214,30
+
+
+E1OG34 - EOG RESOURCES INC
+DIVIDENDO
+15/10/2024
+06/11/2024
+R$ 1,744471
+R$ 364,95
+
+
+GEHC34 - GE HEALTHCARE TECHNOLOGIES INC
+DIVIDENDO
+16/10/2024
+22/11/2024
+R$ 0,013900
+R$ 63,43
+
+
+P1NR34 - PENTAIR PLC
+DIVIDENDO
+16/10/2024
+07/11/2024
+R$ 1,232320
+R$ 541,95
+
+
+COLG34 - COLGATE-PALMOLIVE COMPANY
+DIVIDENDO
+17/10/2024
+25/11/2024
+R$ 0,267610
+R$ 80,47
+
+
+CVSH34 - CVS HEALTH CORPORATION
+DIVIDENDO
+17/10/2024
+07/11/2024
+R$ 0,243752
+R$ 36,80
+
+
+A1PA34 - APA CORP
+DIVIDENDO
+18/10/2024
+28/11/2024
+R$ 0,933560
+R$ 146,89
+
+
+BQYL39 - GLOBAL X NASDAQ 100 COVERED CALL ETF
+DIVIDENDO
+18/10/2024
+01/11/2024
+R$ 0,210590
+R$ 33,80
+
+
+D1EL34 - DELL TECHNOLOGIES INC
+DIVIDENDO
+18/10/2024
+07/11/2024
+R$ 1,631125
+R$ 681,69
+
+
+ALOS3 - ALLOS S.A
+DIVIDENDO
+21/10/2024
+04/11/2024
+R$ 0,095110
+R$ 22,01
+
+
+BMGB3 - BANCO BMG S.A.
+JCP
+21/10/2024
+08/11/2024
+R$ 0,084000
+-
+
+
+BMGB4 - BANCO BMG S.A.
+JCP
+21/10/2024
+08/11/2024
+R$ 0,084000
+R$ 4,06
+
+
+CLXC34 - CLOROX COMPANY
+DIVIDENDO
+21/10/2024
+13/11/2024
+R$ 1,130131
+R$ 223,02
+
+
+LOWC34 - LOWES COMPANIES INC
+DIVIDENDO
+21/10/2024
+12/11/2024
+R$ 0,219993
+R$ 77,32
+
+
+J1EG34 - JACOBS SOLUTIONS INC.
+DIVIDENDO
+23/10/2024
+28/11/2024
+R$ 0,537500
+R$ 383,60
+
+
+BAGY39 - WISDOMTREE YIELD ENHANCED US AGGREGATE BOND FUND
+DIVIDENDO
+25/10/2024
+05/11/2024
+R$ 0,143375
+R$ 61,60
+
+
+BUSF39 - WISDOMTREE FLOATING RATE TREASURY FUND
+DIVIDENDO
+25/10/2024
+05/11/2024
+R$ 0,166960
+R$ 56,17
+
+
+TEXA34 - TEXAS INSTRUMENTS INC.
+DIVIDENDO
+28/10/2024
+25/11/2024
+R$ 0,332996
+R$ 76,37
+
+
+BCSA34 - BANCO SANTANDER SA
+DIVIDENDO
+29/10/2024
+12/11/2024
+R$ 0,422885
+R$ 27,83
+
+
+N1IS34 - NISOURCE INC
+DIVIDENDO
+29/10/2024
+26/11/2024
+R$ 0,985000
+R$ 190,08
+
+
+L1WH34 - LAMB WESTON HOLDINGS INC
+DIVIDENDO
+30/10/2024
+05/12/2024
+R$ 0,662777
+R$ 197,52
+
+
+ITUB4 - ITAU UNIBANCO HOLDING S.A.
+JCP
+31/10/2024
+02/12/2024
+R$ 0,017650
+R$ 34,70
+
+
+JHSF3 - JHSF PARTICIPACOES S/A
+DIVIDENDO
+31/10/2024
+11/11/2024
+R$ 0,030864
+R$ 4,40
+
+
+BBDC3 - BCO BRADESCO S.A.
+JCP
+01/11/2024
+02/12/2024
+R$ 0,017249
+R$ 13,06
+
+
+BBDC4 - BCO BRADESCO S.A.
+JCP
+01/11/2024
+02/12/2024
+R$ 0,018974
+R$ 14,92
+
+
+BEES3 - BANESTES S/A BANCO DO ESTADO DO ESPIRITO SANTO
+JCP
+01/11/2024
+02/12/2024
+R$ 0,022791
+R$ 8,86
+
+
+BEES4 - BANESTES S/A BANCO DO ESTADO DO ESPIRITO SANTO
+JCP
+01/11/2024
+02/12/2024
+R$ 0,022791
+R$ 9,21
+
+
+F1EC34 - FIRSTENERGY CORP
+DIVIDENDO
+05/11/2024
+05/12/2024
+R$ 1,572486
+R$ 237,57
+
+
+ARNC34 - HOWMET AEROSPACE INC.
+DIVIDENDO
+06/11/2024
+29/11/2024
+R$ 0,294445
+R$ 580,18
+
+
+ARMT34 - ARCELORMITTAL
+DIVIDENDO
+08/11/2024
+10/12/2024
+R$ 0,531280
+R$ 68,78
+
+
+WLMM3 - WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.
+JCP
+08/11/2024
+27/11/2024
+R$ 0,182296
+R$ 28,09
+
+
+WLMM4 - WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.
+JCP
+08/11/2024
+27/11/2024
+R$ 0,200525
+R$ 32,50
+
+
+P1AC34 - PACCAR INC
+DIVIDENDO
+11/11/2024
+10/12/2024
+R$ 0,570750
+R$ 290,12
+
+
+K1RC34 - KROGER CO
+DIVIDENDO
+12/11/2024
+05/12/2024
+R$ 1,173010
+R$ 314,02
+
+
+TJXC34 - TJX COMPANIES INC
+DIVIDENDO
+12/11/2024
+11/12/2024
+R$ 1,389206
+R$ 637,48
+
+
+J1EF34 - JEFFERIES FINANCIAL GROUP INC
+DIVIDENDO
+13/11/2024
+03/12/2024
+R$ 1,295833
+R$ 353,92
+
+
+PETZ3 - PET CENTER COMERCIO E PARTICIPACOES S.A.
+DIVIDENDO
+13/11/2024
+29/11/2024
+R$ 0,288297
+R$ 4,72
+
+
+TGTB34 - TARGET CORP
+DIVIDENDO
+14/11/2024
+19/12/2024
+R$ 4,063545
+R$ 859,19
+
+
+A1MT34 - APPLIED MATERIALS INC
+DIVIDENDO
+18/11/2024
+18/12/2024
+R$ 0,153016
+R$ 114,55
+
+
+ALOS3 - ALLOS S.A
+DIVIDENDO
+18/11/2024
+03/12/2024
+R$ 0,095110
+R$ 22,01
+
+
+C1NP34 - CENTERPOINT ENERGY INC
+DIVIDENDO
+18/11/2024
+18/12/2024
+R$ 0,777500
+R$ 164,84
+
+
+MSFT34 - MICROSOFT CORPORATION
+DIVIDENDO
+18/11/2024
+18/12/2024
+R$ 0,128684
+R$ 97,35
+
+
+F1BH34 - FORTUNE BRANDS INNOVATIONS, INC.
+DIVIDENDO
+19/11/2024
+17/12/2024
+R$ 0,900160
+R$ 493,75
+
+
+T1EL34 - TE CONNECTIVITY PLC
+DIVIDENDO
+19/11/2024
+12/12/2024
+R$ 1,283333
+R$ 411,66
+
+
+SPGI34 - S&P GLOBAL INC
+DIVIDENDO
+22/11/2024
+17/12/2024
+R$ 0,093589
+R$ 81,03
+
+
+T1MU34 - T-MOBILE US INC
+DIVIDENDO
+25/11/2024
+18/12/2024
+R$ 1,630000
+R$ 592,35
+
+
+TSNF34 - TYSON FOODS INC
+DIVIDENDO
+27/11/2024
+19/12/2024
+R$ 1,861781
+R$ 325,72
+
+
+JHSF3 - JHSF PARTICIPACOES S/A
+DIVIDENDO
+28/11/2024
+09/12/2024
+R$ 0,030864
+R$ 4,40
+
+
+MCDC34 - MCDONALDS CORP.
+DIVIDENDO
+28/11/2024
+20/12/2024
+R$ 0,325727
+R$ 84,99
+
+
+ITSA3 - ITAUSA S.A.
+JCP
+29/11/2024
+02/01/2025
+R$ 0,023529
+R$ 10,46
+
+
+ITSA4 - ITAUSA S.A.
+JCP
+29/11/2024
+02/01/2025
+R$ 0,023529
+R$ 10,47
+
+
+ITUB4 - ITAU UNIBANCO HOLDING S.A.
+JCP
+29/11/2024
+02/01/2025
+R$ 0,017650
+R$ 34,70
+
+
+BBDC3 - BCO BRADESCO S.A.
+JCP
+02/12/2024
+02/01/2025
+R$ 0,017249
+R$ 13,06
+
+
+BBDC4 - BCO BRADESCO S.A.
+JCP
+02/12/2024
+02/01/2025
+R$ 0,018974
+R$ 14,92
+
+
+BEES3 - BANESTES S/A BANCO DO ESTADO DO ESPIRITO SANTO
+JCP
+02/12/2024
+02/01/2025
+R$ 0,022791
+R$ 8,86
+
+
+BEES4 - BANESTES S/A BANCO DO ESTADO DO ESPIRITO SANTO
+JCP
+02/12/2024
+02/01/2025
+R$ 0,022791
+R$ 9,21
+
+
+TSMC34 - TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD
+DIVIDENDO
+10/12/2024
+15/01/2025
+R$ 0,322853
+R$ 130,19
+
+
+G1RM34 - GARMIN LTD
+DIVIDENDO
+11/12/2024
+06/01/2025
+R$ 1,786580
+R$ 459,44
+
+
+WALM34 - WALMART INC.
+DIVIDENDO
+11/12/2024
+10/01/2025
+R$ 0,043342
+R$ 28,04
+
+
+C1BS34 - PARAMOUNT GLOBAL
+DIVIDENDO
+12/12/2024
+08/01/2025
+R$ 0,185121
+R$ 58,88
+
+
+STMN34 - STMICROELECTRONICS NV
+DIVIDENDO
+13/12/2024
+06/01/2025
+R$ 0,416608
+R$ 157,22
+
+
+MDIA3 - M.DIAS BRANCO S.A. IND COM DE ALIMENTOS
+JCP
+16/12/2024
+30/12/2024
+R$ 0,060000
+R$ 26,15
+
+
+B1TI34 - BRITISH AMERICAN TOBACCO PLC
+DIVIDENDO
+18/12/2024
+12/02/2025
+R$ 0,715213
+R$ 39,63
+
+
+MULT3 - MULTIPLAN - EMPREEND IMOBILIARIOS S.A.
+JCP
+20/12/2024
+30/09/2025
+R$ 0,199043
+R$ 25,44
+
+
+NOKI34 - NOKIA CORPORATION
+DIVIDENDO
+31/01/2025
+24/02/2025
+R$ 0,157287
+R$ 24,93
+
+
+T1EL34 - TE CONNECTIVITY PLC
+DIVIDENDO
+19/02/2025
+13/03/2025
+R$ 1,581290
+R$ 411,66
+
+
+ITSA3 - ITAUSA S.A.
+JCP
+28/02/2025
+01/04/2025
+R$ 0,023529
+R$ 10,46
+
+
+ITSA4 - ITAUSA S.A.
+JCP
+28/02/2025
+01/04/2025
+R$ 0,023529
+R$ 10,47
+
+
+G1RM34 - GARMIN LTD
+DIVIDENDO
+12/03/2025
+03/04/2025
+R$ 1,786580
+R$ 459,44
+🤖🤖Obrigado por usar o Nosso Boot 🤖🤖🤖
+
+          _    _ _______ ____  __  __       _______ _____ ______         _   _ _____   ____         ____   ____   ____ _______   _____  ______ _____ _____  _____
+     /\  | |  | |__   __/ __ \|  \/  |   /\|__   __|_   _|___  /   /\   | \ | |  __ \ / __ \       |  _ \ / __ \ / __ \__   __| |  __ \|  ____/ ____|_   _|/ ____|
+    /  \ | |  | |  | | | |  | | \  / |  /  \  | |    | |    / /   /  \  |  \| | |  | | |  | |______| |_) | |  | | |  | | | |    | |__) | |__ | |  __  | | | (___
+   / /\ \| |  | |  | | | |  | | |\/| | / /\ \ | |    | |   / /   / /\ \ | . ` | |  | | |  | |______|  _ <| |  | | |  | | | |    |  _  /|  __|| | |_ | | |  \___ \
+  / ____ \ |__| |  | | | |__| | |  | |/ ____ \| |   _| |_ / /__ / ____ \| |\  | |__| | |__| |      | |_) | |__| | |__| | | |    | | \ \| |___| |__| |_| |_ ____) |
+ /_/    \_\____/   |_|__\____/|_|_ |_/_/    \_\_|  |_____/_____/_/    \_\_| \_|_____/ \____/       |____/ \____/ \____/  |_|    |_|  \_\______\_____|_____|_____/
+               ____ |__ \ / _ \__ \| || |
+              / __ \   ) | | | | ) | || |_
+             / / _` | / /| | | |/ /|__   _|
+            | | (_| |/ /_| |_| / /_   | |
+             \ \__,_|____|\___/____|  |_|
+              \____/
+
+
+O Dotenv é uma biblioteca Python que permite carregar variáveis de ambiente a partir de um arquivo .env.
+Configuração de Login
+
+
+
+*************************************
+*****AUTOMAÇÃO ENVIO DE E-MAILS *****
+*************************************
+
+
+Criando e configurando E-mail para ser Enviado...
+....Aguarde
+
+**********CONFIGURAÇÃO DE ANEXOS **********
+
+ 🙌🙌 Enviando E-mail com Anexo de Arquivo
+.......Aguarde
+
+⏳ Acabamos de fazer a Manipulação dos arquivos...... ⏳
+....Aguarde
+
+⚙🔍 Configuração  de anexo via  E-mail...
+....Aguarde ⚙🔍
+
+🤖🤖 Obrigado por Usar o nosso BOOT 🤖🤖🤖
+
+Copyright Ano 2024
+O Dotenv é uma biblioteca Python que permite carregar variáveis de ambiente a partir de um arquivo .env.
+Configuração de Login
+
+
+
+*************************************
+*****AUTOMAÇÃO ENVIO DE E-MAILS *****
+*************************************
+
+
+Criando e configurando E-mail para ser Enviado...
+....Aguarde
+
+**********CONFIGURAÇÃO DE ANEXOS **********
+
+ 🙌🙌 Enviando E-mail com Anexo de Arquivo
+.......Aguarde
+
+⏳ Acabamos de fazer a Manipulação dos arquivos...... ⏳
+....Aguarde
+
+⚙🔍 Configuração  de anexo via  E-mail...
+....Aguarde ⚙🔍
+
+🤖🤖 Obrigado por Usar o nosso BOOT 🤖🤖🤖
+
+Copyright Ano 2024
+Buscando Módulo De envio de E-mails 15:48
+Elemento encontrado com Sucesso !!!

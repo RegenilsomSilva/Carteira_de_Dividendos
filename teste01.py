@@ -24,3 +24,7 @@ for i in range(50):
 # Quando terminar a automação, você pode parar a música
 pygame.mixer.music.stop()
 
+local = r'Arquivos_LOG_Temp' + os.sep + 'dividendo_a_pagar.xlsx'
+
+print(f'Seu local onde está o arquivo é este :{local}')
+

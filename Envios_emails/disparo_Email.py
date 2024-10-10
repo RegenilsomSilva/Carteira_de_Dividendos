@@ -93,8 +93,8 @@ class EmailSender:
             sleep(random.randint(8, 10))    
         logging.info('Email sent successfully.')  # Registro de Loog
         print(f'🤖🤖 Obrigado por Usar o nosso BOOT 🤖🤖🤖{os.linesep}') 
-        print(f'Copyright Ano 2024')
-        logging.info('Copyright Ano 2024')
+        print(f'Copyright Ano @2024')
+        logging.info('Copyright Ano @2024')
        
                                                           
 SendingMailing  = EmailSender()  
