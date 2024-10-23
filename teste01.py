@@ -6,25 +6,27 @@ import os
 
 
 # Inicializa o mixer do pygame
-pygame.mixer.init()
+# pygame.mixer.init()
 
-#Local da Musica....... 
-local_da_Musica = r'MUSICA_2_PLANO' + os.sep + 'EiffelBlue_8_Minutos.mp3'
-# Carrega e toca a música
-pygame.mixer.music.load(local_da_Musica)
+# #Local da Musica....... 
+# local_da_Musica = r'MUSICA_2_PLANO' + os.sep + 'EiffelBlue_8_Minutos.mp3'
+# # Carrega e toca a música
+# pygame.mixer.music.load(local_da_Musica)
 
-# Toca a música em loop
-pygame.mixer.music.play(-1)
+# # Toca a música em loop
+# pygame.mixer.music.play(-1)
 
-# Automação rodando
-for i in range(50):
-    print(f"Automação rodando... {i}")
-    time.sleep(2)  # Simulando uma tarefa
+# # Automação rodando
+# for i in range(50):
+#     print(f"Automação rodando... {i}")
+#     time.sleep(2)  # Simulando uma tarefa
 
-# Quando terminar a automação, você pode parar a música
-pygame.mixer.music.stop()
+# # Quando terminar a automação, você pode parar a música
+# pygame.mixer.music.stop()
 
-local = r'Arquivos_LOG_Temp' + os.sep + 'dividendo_a_pagar.xlsx'
+# local = r'Arquivos_LOG_Temp' + os.sep + 'dividendo_a_pagar.xlsx'
 
-print(f'Seu local onde está o arquivo é este :{local}')
+# print(f'Seu local onde está o arquivo é este :{local}')
+
+print(f'\033[1;3m Seu local onde está o arquivo é este :')
 

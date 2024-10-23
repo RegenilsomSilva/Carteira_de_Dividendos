@@ -1691,3 +1691,992 @@ Criando e configurando E-mail para ser Enviado...
 Copyright Ano 2024
 Buscando Módulo De envio de E-mails 15:48
 Elemento encontrado com Sucesso !!!
+
+
+ 🤗 Encontramos a Opção de Habilitar os Cookies....
+iremos Clicar.... em habilitar...
+ Concluido com Sucesso....✅
+[19580:17720:1021/172423.162:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172533.991:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.006:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.006:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.011:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.014:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.015:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.031:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.032:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.032:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.033:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.058:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172534.058:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172536.250:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+[19580:17720:1021/172536.858:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+
+
+
+
+ Vamos abri a terceira Aba
+Terceira  Aba foi aberta com sucesso ...
+[19580:17720:1021/172626.864:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+
+ 🤗 Encontramos a Opção de Habilitar os Cookies....
+iremos Clicar.... em habilitar...
+ Concluido com Sucesso....✅
+
+
+
+
+ 🤗 Encontramos a Opção Digitar o CPF ou CNPJ...
+Foi digitado com sucesso ✅
+
+
+
+
+ 🤗 Encontramos a Opção de Digitar a Senha ou Password ....
+Foi digitado com sucesso ✅
+
+
+Opção de Não sou Robô está Visivél.... Vamos Clicar
+Foi selecionado com sucesso ✅
+
+
+  🤗 Encontramos a Opção de Entra na Aplicação ....
+ Foi selecionado com sucesso ✅
+
+
+
+
+🤖🤖Obrigado por usar o Nosso Boot Criação de Planilhas Excel 🤖🤖🤖 as 21/10/2024 
+,Criação da Planilha Efetuado com sucesso..
+
+
+
+
+
+ 🤗 Encontramos a Opção de  Pular TOUR....
+Clicado com sucesso....
+
+
+
+
+ 🤗 Encontramos a Opção de  Proventos....
+Clicado com sucesso....
+
+
+
+
+[19580:17720:1021/172800.612:ERROR:fallback_task_provider.cc(127)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+
+
+  🤗 Encontramos a Opção de  Proventos....
+Clicado com sucesso....
+
+
+O "Radar de Proventos" estima pagamentos futuros de investimentos, incluindo dividendos e juros sobre capital próprio
+
+
+
+
+Show de Bola... Encontramos os Produtos
+
+
+Encontramos o Tipo de Eventos.....
+
+
+ Encontramos a Data para Compra as Ações e Adquiri os Dividendos ou o JCP....
+
+
+
+
+Encontramos a Data que a Empresa pagará os Dividendos ou o JCP...
+
+
+
+
+Encontramos o Valor dos Dividendos...
+
+
+...Preço sugerido para Compra as Açoes e ter o beneficío de ser pago o Dividendo....
+
+
+
+
+ALOS3 - ALLOS S.A
+DIVIDENDO
+21/10/2024
+04/11/2024
+R$ 0,095110
+R$ 22,38
+
+
+BMGB3 - BANCO BMG S.A.
+JCP
+21/10/2024
+08/11/2024
+R$ 0,084000
+-
+
+
+BMGB4 - BANCO BMG S.A.
+JCP
+21/10/2024
+08/11/2024
+R$ 0,084000
+R$ 4,61
+
+
+CLXC34 - CLOROX COMPANY
+DIVIDENDO
+21/10/2024
+13/11/2024
+R$ 1,130131
+R$ 230,49
+
+
+LOWC34 - LOWES COMPANIES INC
+DIVIDENDO
+21/10/2024
+12/11/2024
+R$ 0,219993
+R$ 80,15
+
+
+C1RR34 - CARRIER GLOBAL CORPORATION
+DIVIDENDO
+23/10/2024
+25/11/2024
+R$ 0,179354
+R$ 116,16
+
+
+FASL34 - FASTENAL CO
+DIVIDENDO
+23/10/2024
+28/11/2024
+R$ 1,484182
+R$ 442,75
+
+
+J1EG34 - JACOBS SOLUTIONS INC.
+DIVIDENDO
+23/10/2024
+28/11/2024
+R$ 0,537500
+R$ 408,56
+
+
+U1NM34 - UNUM GROUP
+DIVIDENDO
+23/10/2024
+22/11/2024
+R$ 1,598439
+R$ 363,21
+
+
+VITT3 - VITTIA S.A.
+JCP
+23/10/2024
+31/12/2025
+R$ 0,148366
+R$ 5,35
+
+
+BAGY39 - WISDOMTREE YIELD ENHANCED US AGGREGATE BOND FUND
+DIVIDENDO
+25/10/2024
+05/11/2024
+R$ 0,143375
+R$ 62,91
+
+
+BUSF39 - WISDOMTREE FLOATING RATE TREASURY FUND
+DIVIDENDO
+25/10/2024
+05/11/2024
+R$ 0,166960
+R$ 57,41
+
+
+EVTC31 - EVERTEC INC
+DIVIDENDO
+25/10/2024
+13/12/2024
+R$ 0,282711
+R$ 189,24
+
+
+I1FO34 - INFOSYS LTD
+DIVIDENDO
+25/10/2024
+26/01/2045
+R$ 0,610400
+R$ 64,00
+
+
+E2NT34 - ENTEGRIS INC
+DIVIDENDO
+28/10/2024
+26/11/2024
+R$ 0,021338
+R$ 32,73
+
+
+TEXA34 - TEXAS INSTRUMENTS INC.
+DIVIDENDO
+28/10/2024
+25/11/2024
+R$ 0,332996
+R$ 75,28
+
+
+A1EN34 - ALLIANT ENERGY CORP
+DIVIDENDO
+29/10/2024
+22/11/2024
+R$ 1,842361
+R$ 354,17
+
+
+A1OS34 - AO SMITH CORP
+DIVIDENDO
+29/10/2024
+22/11/2024
+R$ 1,268947
+R$ 447,74
+
+
+BCSA34 - BANCO SANTANDER SA
+DIVIDENDO
+29/10/2024
+12/11/2024
+R$ 0,422885
+R$ 28,78
+
+
+C1AG34 - CONAGRA BRANDS INC
+DIVIDENDO
+29/10/2024
+03/12/2024
+R$ 1,290750
+R$ 172,86
+
+
+KMIC34 - KINDER MORGAN INC
+DIVIDENDO
+29/10/2024
+22/11/2024
+R$ 1,103608
+R$ 141,85
+
+
+MSBR34 - MORGAN STANLEY
+DIVIDENDO
+29/10/2024
+27/11/2024
+R$ 0,695538
+R$ 137,71
+
+
+N1IS34 - NISOURCE INC
+DIVIDENDO
+29/10/2024
+26/11/2024
+R$ 0,985000
+R$ 200,38
+
+
+S2TA34 - STAG INDUSTRIAL INC
+DIVIDENDO
+29/10/2024
+22/11/2024
+R$ 0,092996
+R$ 43,84
+
+
+Z1TS34 - ZOETIS INC
+DIVIDENDO
+29/10/2024
+09/12/2024
+R$ 0,101944
+R$ 68,88
+
+
+A1ES34 - AES CORP
+DIVIDENDO
+30/10/2024
+22/11/2024
+R$ 0,656488
+R$ 99,49
+
+
+A1ON34 - AON PLC
+DIVIDENDO
+30/10/2024
+22/11/2024
+R$ 0,688105
+R$ 509,63
+
+
+COWC34 - COSTCO WHOLESALE CORPORATION
+DIVIDENDO
+30/10/2024
+22/11/2024
+R$ 0,111319
+R$ 126,53
+
+
+L1WH34 - LAMB WESTON HOLDINGS INC
+DIVIDENDO
+30/10/2024
+05/12/2024
+R$ 0,662777
+R$ 223,17
+
+
+N1RG34 - NRG ENERGY INC
+DIVIDENDO
+30/10/2024
+22/11/2024
+R$ 1,550825
+R$ 493,59
+
+
+O1KE34 - ONEOK INC
+DIVIDENDO
+30/10/2024
+22/11/2024
+R$ 1,900131
+R$ 276,21
+
+
+R1IN34 - REALTY INCOME CORP
+DIVIDENDO
+30/10/2024
+22/11/2024
+R$ 0,491906
+R$ 184,26
+
+
+BBGR39 - ISHARES USD GREEN BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,119833
+R$ 54,41
+
+
+BEAG39 - ISHARES ESG AWARE US AGGREGATE BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,110000
+R$ 54,43
+
+
+BFAL39 - ISHARES FALLEN ANGELS USD BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,178461
+R$ 51,67
+
+
+BFLO39 - ISHARES FLOATING RATE BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,193500
+R$ 58,08
+
+
+BGOV39 - ISHARES US TREASURY BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,075700
+R$ 43,76
+
+
+BGOZ39 - ISHARES 25 YEAR TREASURY STRIPS BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,146400
+R$ 63,05
+
+
+BHYC39 - ISHARES 0-5 YEAR HIGH YIELD CORPORATE BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,233155
+R$ 59,14
+
+
+BHYG39 - ISHARES IBOXX HIGH YIELD CORPORATE BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,189765
+R$ 56,83
+
+
+BICV39 - ISHARES CONVERTIBLE BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,068687
+R$ 60,34
+
+
+BIEI39 - ISHARES 3-7 YEAR TREASURY BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,096443
+R$ 56,00
+
+
+BIGL39 - ISHARES 10 YEAR INVESTM GRADE CORPORATE BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,159800
+R$ 59,46
+
+
+BIGS39 - ISHARES 1-5 YEAR INVESTM GRADE CORPORATE BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,130540
+R$ 59,60
+
+
+BIUS39 - ISHARES CORE TOTAL USD BOND MARKET ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,110000
+R$ 52,86
+
+
+BLQD39 - ISHARES IBOXX INVESTMENT GRADE CORPORATE BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,153428
+R$ 63,13
+
+
+BMBB39 - ISHARES MBS ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,115055
+R$ 53,65
+
+
+BSGO39 - ISHARES 0-3 MONTH TREASURY BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,168515
+R$ 49,08
+
+
+BSHV39 - ISHARES SHORT TREASURY BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,180142
+R$ 62,91
+
+
+BSHY39 - ISHARES 1-3 YEAR TREASURY BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,126956
+R$ 58,85
+
+
+BSTI39 - ISHARES 0-5 YEAR TIPS BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,117295
+R$ 57,58
+
+
+BSUC39 - ISHARES ESG AWARE USD CORPORATE BOND ETF
+DIVIDENDO
+31/10/2024
+13/11/2024
+R$ 0,104033
+R$ 44,50
+
+
+ITUB4 - ITAU UNIBANCO HOLDING S.A.
+JCP
+31/10/2024
+02/12/2024
+R$ 0,017650
+R$ 35,28
+
+
+JHSF3 - JHSF PARTICIPACOES S/A
+DIVIDENDO
+31/10/2024
+11/11/2024
+R$ 0,030864
+R$ 4,41
+
+
+V1MC34 - VULCAN MATERIALS CO
+DIVIDENDO
+31/10/2024
+03/12/2024
+R$ 0,029176
+R$ 24,83
+
+
+BBDC3 - BCO BRADESCO S.A.
+JCP
+01/11/2024
+02/12/2024
+R$ 0,017249
+R$ 13,34
+
+
+BBDC4 - BCO BRADESCO S.A.
+JCP
+01/11/2024
+02/12/2024
+R$ 0,018974
+R$ 15,32
+
+
+BEES3 - BANESTES S/A BANCO DO ESTADO DO ESPIRITO SANTO
+JCP
+01/11/2024
+02/12/2024
+R$ 0,022791
+R$ 8,81
+
+
+BEES4 - BANESTES S/A BANCO DO ESTADO DO ESPIRITO SANTO
+JCP
+01/11/2024
+02/12/2024
+R$ 0,022791
+R$ 9,14
+
+
+METB34 - METLIFE INC
+DIVIDENDO
+01/11/2024
+26/12/2024
+R$ 1,992658
+R$ 486,19
+
+
+STZB34 - CONSTELLATION BRANDS INC
+DIVIDENDO
+01/11/2024
+27/11/2024
+R$ 0,927509
+R$ 344,02
+
+
+F1EC34 - FIRSTENERGY CORP
+DIVIDENDO
+05/11/2024
+05/12/2024
+R$ 1,572486
+R$ 248,85
+
+
+P1AY34 - PAYCHEX INC
+DIVIDENDO
+05/11/2024
+03/12/2024
+R$ 1,850080
+R$ 402,52
+
+
+ARNC34 - HOWMET AEROSPACE INC.
+DIVIDENDO
+06/11/2024
+29/11/2024
+R$ 0,294445
+R$ 599,81
+
+
+PFIZ34 - PFIZER INC.
+DIVIDENDO
+06/11/2024
+06/12/2024
+R$ 0,395866
+R$ 41,61
+
+
+VLID3 - VALID SOLUCOES S/A
+JCP
+07/11/2024
+18/11/2024
+R$ 0,530000
+R$ 22,68
+
+
+ARMT34 - ARCELORMITTAL
+DIVIDENDO
+08/11/2024
+10/12/2024
+R$ 0,531280
+R$ 69,34
+
+
+P1PG34 - PPG INDUSTRIES INC
+DIVIDENDO
+08/11/2024
+18/12/2024
+R$ 1,305375
+R$ 371,75
+
+
+WLMM3 - WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.
+JCP
+08/11/2024
+27/11/2024
+R$ 0,182296
+R$ 28,09
+
+
+WLMM4 - WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.
+JCP
+08/11/2024
+27/11/2024
+R$ 0,200525
+R$ 32,43
+
+
+E1DI34 - CONSOLIDATED EDISON INC
+DIVIDENDO
+11/11/2024
+20/12/2024
+R$ 1,593292
+R$ 302,41
+
+
+P1AC34 - PACCAR INC
+DIVIDENDO
+11/11/2024
+10/12/2024
+R$ 0,570750
+R$ 313,61
+
+
+W1AB34 - WABTEC CORP
+DIVIDENDO
+11/11/2024
+03/12/2024
+R$ 0,383923
+R$ 543,68
+
+
+C1FI34 - CF INDUSTRIES HOLDINGS INC
+DIVIDENDO
+12/11/2024
+05/12/2024
+R$ 1,836695
+R$ 477,75
+
+
+DUKB34 - DUKE ENERGY CORPORATION
+DIVIDENDO
+12/11/2024
+26/12/2024
+R$ 3,781256
+R$ 686,54
+
+
+G1LW34 - CORNING INC
+DIVIDENDO
+12/11/2024
+19/12/2024
+R$ 1,028414
+R$ 265,08
+
+
+I1PC34 - INTERNATIONAL PAPER CO
+DIVIDENDO
+12/11/2024
+20/12/2024
+R$ 1,763765
+R$ 265,67
+
+
+K1RC34 - KROGER CO
+DIVIDENDO
+12/11/2024
+05/12/2024
+R$ 1,173010
+R$ 321,24
+
+
+TJXC34 - TJX COMPANIES INC
+DIVIDENDO
+12/11/2024
+11/12/2024
+R$ 1,389206
+R$ 669,58
+
+
+W1EC34 - WEC ENERGY GROUP INC
+DIVIDENDO
+12/11/2024
+05/12/2024
+R$ 1,602989
+R$ 283,82
+
+
+W1HR34 - WHIRLPOOL CORP
+DIVIDENDO
+12/11/2024
+19/12/2024
+R$ 1,668401
+R$ 152,78
+
+
+HONB34 - HONEYWELL INTERNATIONAL INC.
+DIVIDENDO
+13/11/2024
+17/12/2024
+R$ 4,080962
+R$ 1.263,59
+
+
+J1EF34 - JEFFERIES FINANCIAL GROUP INC
+DIVIDENDO
+13/11/2024
+03/12/2024
+R$ 1,295833
+R$ 379,76
+
+
+L1HX34 - L3HARRIS TECHNOLOGIES INC
+DIVIDENDO
+13/11/2024
+12/12/2024
+R$ 1,113174
+R$ 354,18
+
+
+P1SX34 - PHILLIPS 66
+DIVIDENDO
+13/11/2024
+06/12/2024
+R$ 2,188314
+R$ 378,29
+
+
+PETZ3 - PET CENTER COMERCIO E PARTICIPACOES S.A.
+DIVIDENDO
+13/11/2024
+29/11/2024
+R$ 0,288297
+R$ 4,94
+
+
+RYTT34 - RTX CORPORATION
+DIVIDENDO
+13/11/2024
+19/12/2024
+R$ 0,388275
+R$ 119,66
+
+
+T1SO34 - THE SOUTHERN CO
+DIVIDENDO
+13/11/2024
+12/12/2024
+R$ 2,745726
+R$ 530,71
+
+
+TGTB34 - TARGET CORP
+DIVIDENDO
+14/11/2024
+19/12/2024
+R$ 4,063545
+R$ 893,09
+
+
+A1MT34 - APPLIED MATERIALS INC
+DIVIDENDO
+18/11/2024
+18/12/2024
+R$ 0,153016
+R$ 105,88
+
+
+ALOS3 - ALLOS S.A
+DIVIDENDO
+18/11/2024
+03/12/2024
+R$ 0,095110
+R$ 22,38
+
+
+C1NP34 - CENTERPOINT ENERGY INC
+DIVIDENDO
+18/11/2024
+18/12/2024
+R$ 0,777500
+R$ 171,07
+
+
+D1FS34 - DISCOVER FINANCIAL SERVICES
+DIVIDENDO
+18/11/2024
+11/12/2024
+R$ 1,343404
+R$ 423,90
+
+
+MSFT34 - MICROSOFT CORPORATION
+DIVIDENDO
+18/11/2024
+18/12/2024
+R$ 0,128684
+R$ 99,35
+
+
+C1MI34 - CUMMINS INC
+DIVIDENDO
+19/11/2024
+11/12/2024
+R$ 1,735192
+R$ 478,35
+
+
+F1BH34 - FORTUNE BRANDS INNOVATIONS, INC.
+DIVIDENDO
+19/11/2024
+17/12/2024
+R$ 0,900160
+R$ 513,42
+
+
+T1EL34 - TE CONNECTIVITY PLC
+DIVIDENDO
+19/11/2024
+12/12/2024
+R$ 1,283333
+R$ 423,94
+
+
+JNJB34 - JOHNSON & JOHNSON
+DIVIDENDO
+22/11/2024
+19/12/2024
+R$ 0,308750
+R$ 62,61
+
+
+L1CA34 - LABCORP HOLDINGS INC.
+DIVIDENDO
+22/11/2024
+19/12/2024
+R$ 0,679646
+R$ 306,87
+
+
+SPGI34 - S&P GLOBAL INC
+DIVIDENDO
+22/11/2024
+17/12/2024
+R$ 0,093589
+R$ 83,07
+🤖🤖Obrigado por usar o Nosso Boot 🤖🤖🤖
+
+          _    _ _______ ____  __  __       _______ _____ ______         _   _ _____   ____         ____   ____   ____ _______   _____  ______ _____ _____  _____
+     /\  | |  | |__   __/ __ \|  \/  |   /\|__   __|_   _|___  /   /\   | \ | |  __ \ / __ \       |  _ \ / __ \ / __ \__   __| |  __ \|  ____/ ____|_   _|/ ____|
+    /  \ | |  | |  | | | |  | | \  / |  /  \  | |    | |    / /   /  \  |  \| | |  | | |  | |______| |_) | |  | | |  | | | |    | |__) | |__ | |  __  | | | (___
+   / /\ \| |  | |  | | | |  | | |\/| | / /\ \ | |    | |   / /   / /\ \ | . ` | |  | | |  | |______|  _ <| |  | | |  | | | |    |  _  /|  __|| | |_ | | |  \___ \
+  / ____ \ |__| |  | | | |__| | |  | |/ ____ \| |   _| |_ / /__ / ____ \| |\  | |__| | |__| |      | |_) | |__| | |__| | | |    | | \ \| |___| |__| |_| |_ ____) |
+ /_/    \_\____/   |_|__\____/|_|_ |_/_/    \_\_|  |_____/_____/_/    \_\_| \_|_____/ \____/       |____/ \____/ \____/  |_|    |_|  \_\______\_____|_____|_____/
+               ____ |__ \ / _ \__ \| || |                                                                                                                 
+
+              / __ \   ) | | | | ) | || |_                                                                                                                
+
+             / / _` | / /| | | |/ /|__   _|                                                                                                               
+
+            | | (_| |/ /_| |_| / /_   | |                                                                                                                 
+
+             \ \__,_|____|\___/____|  |_|                                                                                                                 
+
+              \____/                                                                                                                                      
+
+                                                                                                                                                          
+
+
+O Dotenv é uma biblioteca Python que permite carregar variáveis de ambiente a partir de um arquivo .env.
+Configuração de Login
+
+
+
+*************************************
+*****AUTOMAÇÃO ENVIO DE E-MAILS *****
+*************************************
+
+
+Criando e configurando E-mail para ser Enviado...
+....Aguarde
+
+**********CONFIGURAÇÃO DE ANEXOS **********
+
+ 🙌🙌 Enviando E-mail com Anexo de Arquivo
+.......Aguarde
+
+⏳ Acabamos de fazer a Manipulação dos arquivos...... ⏳
+....Aguarde
+
+⚙🔍 Configuração  de anexo via  E-mail...
+....Aguarde ⚙🔍
+
+🤖🤖 Obrigado por Usar o nosso BOOT 🤖🤖🤖
+
+Copyright Ano @2024
+O Dotenv é uma biblioteca Python que permite carregar variáveis de ambiente a partir de um arquivo .env.
+Configuração de Login
+
+
+
+*************************************
+*****AUTOMAÇÃO ENVIO DE E-MAILS *****
+*************************************
+
+
+Criando e configurando E-mail para ser Enviado...
+....Aguarde
+
+**********CONFIGURAÇÃO DE ANEXOS **********
+
+ 🙌🙌 Enviando E-mail com Anexo de Arquivo
+.......Aguarde
+
+⏳ Acabamos de fazer a Manipulação dos arquivos...... ⏳
+....Aguarde
+
+⚙🔍 Configuração  de anexo via  E-mail...
+....Aguarde ⚙🔍
+
+🤖🤖 Obrigado por Usar o nosso BOOT 🤖🤖🤖
+
+Copyright Ano @2024
+Buscando Módulo De envio de E-mails 17:28
+Elemento encontrado com Sucesso !!!
+

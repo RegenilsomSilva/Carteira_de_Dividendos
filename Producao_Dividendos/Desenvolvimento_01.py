@@ -67,8 +67,8 @@ class Dividendos:
     def Inicio(self):
         
         self.Entra_Portal()
-        # self.Criacao_De_Planilha()
-        # self.Radar_de_Proventos()
+        self.Criacao_De_Planilha()
+        self.Radar_de_Proventos()
         
     def Entra_Portal(self):
         
@@ -80,7 +80,7 @@ class Dividendos:
 
         Segunda_página_Com_Aba = 'https://www.smiles.com.br/mfe/promocao' 
 
-        Terceira_página_Com_Aba = 'https://www.investidor.b3.com.br/login'
+        Terceira_página_Com_Aba = 'https://b3investidor.b2clogin.com/b3Investidor.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_SIGN_IN&client_id=711b0677-3672-4464-b183-76734fb21907&response_type=code%20id_token&redirect_uri=https://www.investidor.b3.com.br&response_mode=query&scope=openid%20https://b3Investidor.onmicrosoft.com/802348e6-6f23-4d99-9445-45836861cdf4/Read.All&prompt=login&state=dUDUQKeNVxQIdzIHXRY8OtLAPsIxM29p77NROmnc&nonce=Lq5Z8tCEzaTW9gz8kPD2naT9h8Bn7z7hLLVf2bLu&code_challenge=mMMQfvildvfa0hWhXkCAlZL_QtBULChPImJf8dFJ48U&code_challenge_method=S256&generationTime=2024-09-16-11-25-55&doc_hint=85765863558'
         print(os.linesep)
 
         if primeira_pagina is not None:
@@ -98,7 +98,7 @@ class Dividendos:
             self.webdriver.execute_script("arguments[0].click()",habilitar_os_cookies)
             print('iremos Clicar.... em habilitar...\n Concluido com Sucesso....✅')    
             print(os.linesep)
-            sleep(random.randint(120, 180))
+            sleep(random.randint(15, 30))
             print(os.linesep)
 
         # Abra uma nova aba (segunda aba)
@@ -115,7 +115,7 @@ class Dividendos:
             print(' 🤗 Encontramos a Opção de Habilitar os Cookies....')
             self.webdriver.execute_script("arguments[0].click()",habilitar_cookiesAba02)
             print('iremos Clicar.... em habilitar...\n Concluido com Sucesso....✅')  
-            sleep(random.randint(120, 180))
+            sleep(random.randint(15, 30))
             print(os.linesep)
 
         # Abra uma terceira aba
@@ -203,7 +203,7 @@ class Dividendos:
                     pyautogui.click(x=239,y=684,duration=2)  # Mova o mouse para as coordenadas XY e clique nele.
                     print(f'Foi selecionado com sucesso ✅')
 
-        
+            sleep(random.randint(20, 30))
             Entra_Na_Aplicacao = []
             if Entra_Na_Aplicacao is not None:
                 print(os.linesep)
@@ -222,7 +222,7 @@ class Dividendos:
         try:
             # Vamos criar uma planilha para ser enviada via E-mail pela automação 
             # Com Isso o nosso Boot será capaz de enviar as informações via Log terminal e também via E-mail
-            self.workbook                 =       openpyxl.load_workbook('dividendo_a_pagar.xlsx') # Este é a versão mais nova do OpenPyxel
+            self.workbook                 =       openpyxl.load_workbook( r'Arquivos_LOG_Temp' + os.sep + 'dividendo_a_pagar.xlsx') # Este é a versão mais nova do OpenPyxel
             #  Criando uma variavél workbook 
             # self.CriacaoPlanilha          =       self.workbook['Dividendo'] # Planilha1
             self.CriacaoPlanilha          =       self.workbook['Planilha2'] # Planilha1
@@ -253,6 +253,7 @@ class Dividendos:
         Pular_TOUR = self.wait.until(
              expected_conditions.presence_of_element_located(
                   (By.XPATH,'//button[@aria-label="Pular"]')
+        # Bakup que pode ser usado (By.XPATH,' //b3-button[@id="btn-pular"]')
              )   
        )
         if Pular_TOUR is not None:
@@ -439,7 +440,7 @@ class Dividendos:
 
 start = Dividendos()
 start.Inicio()
-# start.Modulo_De_Envio()
+start.Modulo_De_Envio()
 
 
 sleep(180)
