@@ -27,27 +27,27 @@ from time import sleep
 
 '''
 https://www.investidor.b3.com.br/login
-Quero Desenvolver uma Automação ->
-	Web scraping, onde o Boot ira raspar as informações do Site da B3 ( Àrea do investidor da b3) as próximas data e quais serão
-	os ativos para pagamentos de Dividendos, ira trazer tanto a foto dos ativos, quanto detalhado no Excel.
-	iria execultar 2 ou 3 vezes por semana, disponibilizando em um E-mai
+           OBJETIVO DO PROGRAMA
+Desenvolver uma Automação ->
+	Web scraping, onde o Boot ira raspar as informações do Site da B3 ( Àrea do investidor da b3) as próximas datas e quais serão
+	os ativos para pagamentos de Dividendos, ira trazer o detalhamento no Excel.
+	iria execultar Dinamicâmente quando usuário pedi 2 ou 3 vezes por semana, disponibilizando em um E-mai jubtamente com arquivo de loog
 	
-	1°- Entra no Site (https://www.investidor.b3.com.br/login)
-	2° Digite seu CPF (****************) da um Enter ou Entra
-	3° Digitar a Senha (*************) da um Enter ou Entra
+	1°- Entra no Site 
+	2° Digite seu CPF ou CNPJ (****************) da um Enter ou Entra
+	3° Digitar a Password (*************) da um Enter ou Entra
 	4° Clicar no Campo( Não sou Robô)
 	5° Entra- Portal 
 	6° Pular TOUR ->
         7° Rejeitar Cookies 
 	8° Clicar na Aba (Proventos)
 	9° Radar 
+    10° Disponibilizar em uma planilha excel
 
 https://www.investidor.b3.com.br/proventos/radar
 
 '''
 load_dotenv(find_dotenv())
-
-
 logging.basicConfig(level=logging.INFO, filename=r'Arquivos_LOG_Temp' + os.sep + 'Log_de_Execucao.log',filemode='w', format='%(asctime)s - %(levelname)s -%(message)s', datefmt='%d/%m/%Y %H:%M')
 
 def executar_automacao():
@@ -74,8 +74,8 @@ def executar_automacao():
             print(f'{self.func.azul}=================================================================================')
             print(os.linesep)
             print(os.linesep)
-            # ======= Vai funcionar em qualquer Sistema Operacional =================
-        
+
+            # ======= irá funcionar em qualquer Sistema Operacional =================
             self.webdriver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()),options=eder_Options)
             self.wait = WebDriverWait(
                 driver=self.webdriver,
@@ -112,18 +112,19 @@ def executar_automacao():
             # Abre a primeira página
             primeira_pagina = 'https://www.bol.uol.com.br/' 
 
+            # Abre a Segunda página
             Segunda_página_Com_Aba = 'https://www.smiles.com.br/mfe/promocao' 
 
+            # Abre a 3 página
             Terceira_página_Com_Aba = 'https://b3investidor.b2clogin.com/b3Investidor.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_SIGN_IN&client_id=711b0677-3672-4464-b183-76734fb21907&response_type=code%20id_token&redirect_uri=https://www.investidor.b3.com.br&response_mode=query&scope=openid%20https://b3Investidor.onmicrosoft.com/802348e6-6f23-4d99-9445-45836861cdf4/Read.All&prompt=login&state=dUDUQKeNVxQIdzIHXRY8OtLAPsIxM29p77NROmnc&nonce=Lq5Z8tCEzaTW9gz8kPD2naT9h8Bn7z7hLLVf2bLu&code_challenge=mMMQfvildvfa0hWhXkCAlZL_QtBULChPImJf8dFJ48U&code_challenge_method=S256&generationTime=2024-09-16-11-25-55&doc_hint=85765863558'
             print(os.linesep)
             
             if primeira_pagina is not None:
                 self.webdriver.get(primeira_pagina)
                 print('Primeira página foi aberta Juntamente com uma Aba')
-                # Depois que abriu a primeira página - Vamos abri uma outra Aba
+                # Depois que abrir a primeira página - Vamos abri uma outra Aba
                 habilitar_os_cookies = self.wait.until(
                         expected_conditions.presence_of_element_located(
-                            # (By.XPATH,'//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
                             (By.XPATH,'//button[@class="banner-lgpd-consent__accept"]')
                         )
                     )   
@@ -142,7 +143,7 @@ def executar_automacao():
                 print('Segunda Aba foi aberta')
                 habilitar_cookiesAba02 = self.wait.until(
                         expected_conditions.presence_of_element_located(
-                            # (By.XPATH,'//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
+                            # Não Funciona mais (By.XPATH,'//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
                             (By.XPATH,'//button[@id="onetrust-accept-btn-handler"]')
                         )
                     )
@@ -155,12 +156,12 @@ def executar_automacao():
             # Abra uma terceira aba
             if Terceira_página_Com_Aba is not None:
                 print(os.linesep)
-                print(' Vamos abri a terceira Aba')
+                print(' Vamos abrir a terceira Aba')
                 self.webdriver.execute_script(f"window.open('{Terceira_página_Com_Aba}');")
                 self.webdriver.switch_to.window(self.webdriver.window_handles[2])
                 print('Terceira  Aba foi aberta com sucesso ...')
 
-            # try:
+            # try:    Calculo 
             #     print("Total de abas abertas:", len(self.webdriver.window_handles))
             #     if len(self.webdriver.window_handles) > 3:
             #         self.webdriver.switch_to.window(self.webdriver.window_handles[2])  # Acessa a última aba
@@ -169,10 +170,6 @@ def executar_automacao():
             #         print("A terceira aba não está disponível.")
             # except Exception as e:
             #     print(f'Erro ao acessar a página... de investimento: {e}')
-    
-
-
-
     # '-----------------------------------------------------------------------------------------------'
             try:
                 
@@ -181,7 +178,6 @@ def executar_automacao():
                         (By.XPATH,'//*[starts-with(text(),"ACEITAR TODOS OS COOKIES")]')
                     )
                 )   
-
                 if habilitar_os_cookies is not None:
                     print(os.linesep)
                     print(' 🤗 Encontramos a Opção de Habilitar os Cookies....')
@@ -218,7 +214,6 @@ def executar_automacao():
                         (By.XPATH,'//div[@class="form__control"]//input[@type="password"]')
                     )
                 )
-            
                 sleep(random.randint(5, 8))   
 
                 if Digitar_password is not None:
@@ -234,7 +229,7 @@ def executar_automacao():
                     print(os.linesep)
 
                 # 4° Clicar no Campo( Não sou Robô)
-            #  iremos utilizar o Pyautoguir para Sleecionar a caixa de texto | Não sou robor
+            #  iremos utilizar o Pyautoguir para Selecionar a caixa de texto | Não sou robô
                 Nao_sou_Robo = []
                 if Nao_sou_Robo is not None:
                         
@@ -257,16 +252,15 @@ def executar_automacao():
             except Exception as e:
                 
                 print(f'Erro ao Hábilitar os |@Cookies| |@Digitar_Usuario| |@Digitar_password| |@Nao_sou_Robo| |@Entra_Na_Aplicacao|: {e}')
-                print('Tente Novamente Ajustar algus deste Módulo......')
                 print(os.linesep)
                 
         def Criacao_De_Planilha(self):
             try:
                 # Vamos criar uma planilha para ser enviada via E-mail pela automação 
-                # Com Isso o nosso Boot será capaz de enviar as informações via Log terminal e também via E-mail
+                # Com Isso o nosso Boot será capaz de enviar as informações via Loog  e também via E-mail
                 self.workbook                 =       openpyxl.load_workbook( r'Arquivos_LOG_Temp' + os.sep + 'dividendo_a_pagar.xlsx') # Este é a versão mais nova do OpenPyxel
                 #  Criando uma variavél workbook 
-                self.CriacaoPlanilha          =       self.workbook['Planilha2'] # Planilha1
+                self.CriacaoPlanilha          =       self.workbook['Planilha2'] 
                 self.CriacaoPlanilha['B1'] = 'TIPOS DE EVENTOS'
                 self.CriacaoPlanilha['C1'] = 'DATA-COM'
                 self.CriacaoPlanilha['D1'] = 'DATA- PAGAMENTO DIVIDENDOS'
@@ -292,9 +286,8 @@ def executar_automacao():
             Pular_TOUR = self.wait.until(
                 expected_conditions.presence_of_element_located(
                     (By.XPATH,'//button[@aria-label="Pular"]')
-            # Bakup que pode ser usado (By.XPATH,' //b3-button[@id="btn-pular"]')
                 )   
-        )
+            )
             sleep(random.randint(20, 40))
             if Pular_TOUR is not None:
                 
@@ -310,7 +303,6 @@ def executar_automacao():
             # 8° Clicar na Aba (Proventos)   
             Proventos = self.wait.until(
                 expected_conditions.presence_of_all_elements_located(
-                # Não está mais Funcionando    (By.XPATH,'//li[@class="b3i-menu-principal__nav__menu__item ng-tns-c860703811-1"]')
                 (By.XPATH,'//button[@routerlinkactive="b3i-menu-principal__nav__botao--ativo"]')
                     
                 )
@@ -336,8 +328,6 @@ def executar_automacao():
                 )
             )
             # O_Que_E_Radar_De_Proventos = f'O "Radar de Proventos" estima pagamentos futuros de investimentos, incluindo dividendos e juros sobre capital próprio, \noferecendo uma visão clara de cada evento.\n Esta ferramenta facilita a tomada de decisão de investimento e o planejamento financeiro.'
-            # print(f'{O_Que_E_Radar_De_Proventos}')
-
             if Radar_de_Compras_de_Proventos_Dividendos is not None:
                 
                 print(os.linesep)
@@ -420,8 +410,8 @@ def executar_automacao():
             )
             if Preco_Fechamento is not None:
                 print(os.linesep)
-                print('...Preço sugerido para Compra as Açoes e ter o beneficío de ser pago o Dividendo....')
-                logging.info('...Preço sugerido para Compra as Açoes e ter o beneficío de ser pago o Dividendo....')
+                print('...Preço sugerido para Comprar as Açoes e ter o beneficío de ser pago o Dividendo....')
+                logging.info('...Preço sugerido para Comprar as Açoes e ter o beneficío de ser pago o Dividendo....')
                 print(os.linesep)   
 
         # Vamos interar sobre cada iten, que o nosso Boot Encontra, e para isso vamos uzar a função zip
@@ -472,10 +462,8 @@ def executar_automacao():
                 logging.info(f'{os.linesep}')
 
             except:
-                NameError(f'Não Foi possivel Fazer o Envio de E-mail')
-                logging.critical(f'Não Foi possivel Fazer o Envio de E-mail')
-                NameError('Porém daremos continuidade...!')
-                logging.critical('Porém daremos continuidade...!')
+                print(f'Não Foi possivel Fazer o Envio de E-mail\n Porém daremos continuidade...!')
+                logging.critical(f'Não Foi possivel Fazer o Envio de E-mail\n Porém daremos continuidade...!')
                                     
     start = Dividendos()
     start.Inicio()
@@ -499,7 +487,7 @@ try:
 
     schedule.every().day.at(f'{Horario_da_Automacao}').do(executar_automacao)
 except Exception as e:
-    print(f'Não é possivel digitar Letra, tente novamente Digitando o Horário: \n Ex: H:M |"10:00" {e}')
+    print(f'Não é possivel digitar Letra, tente novamente, Digitando o Horário: \n Ex: H:M |"10:00" {e}')
 
 
 import time 
