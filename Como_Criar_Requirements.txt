@@ -1,0 +1,18 @@
+ Como Criar um arquivo requiriments
+
+ 1° No terminal Digite 
+ 
+ pigar generate
+
+
+ # Generate requirements.txt for current directory.
+$ pigar generate
+
+Comandos:
+check Verifica as versões mais recentes de pacotes/distribuições de requirements.txt.
+generate Gera requirements.txt para o projeto Python fornecido.
+
+check     Check latest versions for packages/distributions from requirements.txt.
+generate  Generate requirements.txt for the given Python project.
+
+Depois vai aparecer um seleção de S ou N, clique em No
